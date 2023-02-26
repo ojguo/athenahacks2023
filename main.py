@@ -144,9 +144,7 @@ def Union(lst1, lst2):
 
 def jaccard(list1, list2):
     intersection = len(list(set(list1).intersection(list2)))
-    print(intersection)
     union = Union(list1,list2)
-    print(union)
     return float(intersection) / union
 
 
