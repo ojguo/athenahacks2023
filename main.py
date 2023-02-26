@@ -57,6 +57,14 @@ def star():
     response.headers['Access-Control-Allow-Origin'] = '*'
     return response
 
+#post user information data to firebase
+def store_user_info(user_dict):
+  user_key=user_dict['email'].replace("@","").replace(".","")
+  for k,v in user_dict.items():
+    user_json={str(k):v}
+    response = requests.patch('https://athenahacks-1ad60-default-rtdb.firebaseio.com/users/'+str(user_key)+'/information/.json',\
+                            json=user_json)
+
 #get average star rating
 def Average(lst):
     return sum(lst) / len(lst)
