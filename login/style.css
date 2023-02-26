@@ -1,0 +1,64 @@
+body {
+  background: White;
+  font-size: 25px;
+  margin: 0;
+  height: 100vh;
+  color: #4863A0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Tahoma", sans-serif;
+}
+
+.Login{text-align: center;}
+
+.Create.your.account{text-align: center;}
+
+.button_Login {
+  text-align: center;
+  border-radius: 5px;
+  margin: px 50px;
+  width: auto;
+  opacity: 0.8;
+  color: #4863A0;
+  font-size: 18px;
+  background-color:inherit;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  border: 1.5px solid;
+}
+
+.button_Login:hover {
+  background-color: #4863A0;
+  color: white;
+}
+
+.button_Create_your_account{
+  text-align: center;
+  border-radius: 5px;
+  margin: px 50px;
+  width: auto;
+  opacity: 0.8;
+  color: #4863A0;
+  font-size: 18px;
+  background-color:inherit;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  border: 1.5px solid;
+}
+
+.button_Create_your_account:hover {
+  background-color: #4863A0;
+  color: white;
+}
+
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+.heading{text-align: center;}
