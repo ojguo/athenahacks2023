@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newuserformstylesheet.css">
+  </head>
+  <body>
+    <div id="element">
+      <form>
+        <label for="full name"> Full Name: </label >
+        <input type="text" id="fullname" name="fullname" required="required"> &emsp; &emsp;
+        <label for="email"> Email: </label >
+        <input type="text" id="email" name="email" required="required"> &emsp; &emsp;
+        <label for="gradyear"> Graduation Year:</label>
+        <input type="text" id="gradyear" name="gradyear" required="required"> <br><br><br>
+      </form>
+    </div>
+      <label for="gender"> Gender:</label>
+      <div id="element">
+        <select id="gender" name="gender" class="custom-select" multiple required="required">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Non-binary">Non-binary</option>
+          <option value="Prefer not to say">Prefer not to identify</option>
+        </select>
+    </div>
+    <label for="school">School</label>
+    <div id="element">
+      <select id="school" name="school" class="custom-select" multiple required="required">
+        <option value="USC">USC</option>
+        <option value="UCLA">UCLA</option>
+        <option value="UC Irvine">UC Irvine</option>
+        <option value="UC Merced">UC Merced</option>
+        <option value="UC Riverside">UC Riverside</option>
+        <option value="UC Berkeley">UC Berkeley</option>
+        <option value="Claremont Colleges">Claremont Colleges</option>
+        <option value="Community College">Community College</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <label for="major">Major</label>
+    <div id="element">
+    <select id="major" name="major" class="custom-select" multiple required="required">
+      <option value="CS">CS</option>
+      <option value="CSBA">CSBA</option>
+      <option value="CS Games">CS Games</option>
+      <option value="Data Science">Data Science</option>
+      <option value="Computer Engineering">Computer Engineering</option>
+      <option value="Economics">Economics</option>
+      <option value="Finance">Finance</option>
+      <option value="Business Administration">Business Administration</option>
+      <option value="Other">Other</option>
+    </select>
+    </div>
+    <label for="attended"> What year(s) did you attend AthenaHacks?:</label>
+    <div id="element">
+      <select id="attended" name="attended" class="custom-select" multiple required="required">
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+    </div>
+    <label for="industry"> What are your career industries of interest?</label>
+    <div id="element">
+      <select id="industry" name="industry" class="custom-select" multiple required="required">
+        <option value="Technology">Technology</option>
+        <option value="Healthcare">Healthcare</option>
+        <option value="Data">Data</option>
+        <option value="Machine Learning">Machine Learning</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Media">Media</option>
+        <option value="Finance">Finance</option>
+        <option value="Government">Government</option>
+        <option value="Education">Education</option>
+        <option value="Design/Arts">Design/Arts</option>
+        <option value="Sports">Sports</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <label for="interests"> What are your personal interests?</label>
+    <div id="element">
+      <select id="interests" name="interests" class="custom-select" multiple required="required">
+        <option value="Music">Music</option>
+        <option value="Sports">Sports</option>
+        <option value="Design/Arts">Design/Arts</option>
+        <option value="Gaming">Gaming</option>
+        <option value="Traveling">Traveling</option>
+        <option value="Movies/Film">Movies/Film</option>
+        <option value="Reading">Reading</option>
+        <option value="Outdoor Activities">Outdoor Activities</option>
+        <option value="Exploring Food">Exploring Food</option>
+        <option value="Gardening">Gardening</option>
+        <option value="Cooking/Baking">Cooking/Baking</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <label for="beginner"> Did you feel like your AthenaHacks experience was beginner friendly? (optional)</label>
+    <div id="element">
+      <textarea id = "beginner" name="beginner" rows="5" cols="70">
+      </textarea>
+    </div>
+    <label for="workshops"> How was your experience with workshops at AthenaHacks? <br>
+          Please include the type of workshop (optional)</label>
+    <div id="element">
+      <textarea id="workshop" name="workshop" rows="5" cols="70">
+      </textarea>
+    </div>
+    <label for="speaker"> How was the speaker at your AthenaHacks event? (optional)</label>
+    </label>
+    <div id="element">
+      <textarea id="speaker" name="speaker" rows="5" cols="70">
+      </textarea>
+    </div>
+    <label for="networking"> How was your networking experience at AthenaHacks? (optional)</label>
+    <div id="element">
+      <textarea id="networking" name="networking" rows="5" cols="70">
+      </textarea>
+    </div>
+    <label for="overallexp"> How was your overall experience at AthenaHacks? (optional)</label>
+    <div id="element">
+      <textarea id="overallexp" name="overallexp" rows="5" cols="70">
+      </textarea>
+    </div>
+    <script src="newuserformscript.js"></script>
+  </body>
+</html>
