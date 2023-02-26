@@ -8,6 +8,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Tahoma", sans-serif;
+  background-image: linear-gradient(to left, transparent, #E4D6EE, white), 
+    repeating-linear-gradient(to top, white, transparent, white, #E4D6EE);
 }
 
 .Login{text-align: center;}
