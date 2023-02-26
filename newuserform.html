@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="newuserformstylesheet.css">
   </head>
+  <img src="banner.png" width="1000" height="250">
+  <h3>
+    <div id="intro">
+      <label for="head"> Help us learn a bit more about you so we can connect you to our greater AthenaHacks network:<br></label>
+      <label for="head"> Based on your experiences and interests, we will help match you with a fellow hacker for mentorship and friendship!<br></label>
+    </div>
+  </h3>
   <body>
     <div id="element">
       <form>
-        <label for="full name"> Full Name: </label >
+        <label for="full name"> <b>Full Name: </label >
         <input type="text" id="fullname" name="fullname" required="required"> &emsp; &emsp;
         <label for="email"> Email: </label >
         <input type="text" id="email" name="email" required="required"> &emsp; &emsp;
@@ -16,16 +23,16 @@
         <input type="text" id="gradyear" name="gradyear" required="required"> <br><br><br>
       </form>
     </div>
-      <label for="gender"> Gender:</label>
-      <div id="element">
-        <select id="gender" name="gender" class="custom-select" multiple required="required">
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-          <option value="Non-binary">Non-binary</option>
-          <option value="Prefer not to say">Prefer not to identify</option>
-        </select>
+      <label for="gender"><b>Gender:</label>
+    <div id="element">
+      <select id="gender" name="gender" class="custom-select" multiple required="required">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Non-binary">Non-binary</option>
+        <option value="Prefer not to say">Prefer not to identify</option>
+      </select>
     </div>
-    <label for="school">School</label>
+    <label for="school"><b>School</label>
     <div id="element">
       <select id="school" name="school" class="custom-select" multiple required="required">
         <option value="USC">USC</option>
@@ -39,21 +46,21 @@
         <option value="Other">Other</option>
       </select>
     </div>
-    <label for="major">Major</label>
+    <label for="major"><b>Major</label>
     <div id="element">
-    <select id="major" name="major" class="custom-select" multiple required="required">
-      <option value="CS">CS</option>
-      <option value="CSBA">CSBA</option>
-      <option value="CS Games">CS Games</option>
-      <option value="Data Science">Data Science</option>
-      <option value="Computer Engineering">Computer Engineering</option>
-      <option value="Economics">Economics</option>
-      <option value="Finance">Finance</option>
-      <option value="Business Administration">Business Administration</option>
-      <option value="Other">Other</option>
-    </select>
+      <select id="major" name="major" class="custom-select" multiple required="required">
+        <option value="CS">CS</option>
+        <option value="CSBA">CSBA</option>
+        <option value="CS Games">CS Games</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Computer Engineering">Computer Engineering</option>
+        <option value="Economics">Economics</option>
+        <option value="Finance">Finance</option>
+        <option value="Business Administration">Business Administration</option>
+        <option value="Other">Other</option>
+      </select>
     </div>
-    <label for="attended"> What year(s) did you attend AthenaHacks?:</label>
+    <label for="attended"> <b>What year(s) did you attend AthenaHacks?:</label>
     <div id="element">
       <select id="attended" name="attended" class="custom-select" multiple required="required">
         <option value="2018">2018</option>
@@ -64,7 +71,7 @@
         <option value="2023">2023</option>
       </select>
     </div>
-    <label for="industry"> What are your career industries of interest?</label>
+    <label for="industry"> <b>What are your career industries of interest?</label>
     <div id="element">
       <select id="industry" name="industry" class="custom-select" multiple required="required">
         <option value="Technology">Technology</option>
@@ -81,7 +88,7 @@
         <option value="Other">Other</option>
       </select>
     </div>
-    <label for="interests"> What are your personal interests?</label>
+    <label for="interests"> <b>What are your personal interests?</label>
     <div id="element">
       <select id="interests" name="interests" class="custom-select" multiple required="required">
         <option value="Music">Music</option>
@@ -103,11 +110,37 @@
       <textarea id = "beginner" name="beginner" rows="5" cols="70">
       </textarea>
     </div>
+    <label for="beginnerrate"> Please rate how beginner-friendly AthenaHacks was (optional)</label><br>
+    <div id="element" class="rate">
+      <input type="radio" id="beginner1" name="rate" value="1" />
+      <label for="1" title="text">1</label>
+      <input type="radio" id="beginner2" name="rate" value="2" />
+      <label for="2" title="text">2</label>
+      <input type="radio" id="beginner3" name="rate" value="3" />
+      <label for="3" title="text">3</label>
+      <input type="radio" id="beginner4" name="rate" value="4" />
+      <label for="4" title="text">4</label>
+      <input type="radio" id="beginner5" name="rate" value="5" />
+      <label for="5" title="text">5</label>
+    </div>
     <label for="workshops"> How was your experience with workshops at AthenaHacks? <br>
           Please include the type of workshop (optional)</label>
     <div id="element">
       <textarea id="workshop" name="workshop" rows="5" cols="70">
       </textarea>
+    </div>
+    <label for="workshoprate"> Please rate your workshop experience (optional)</label><br>
+    <div id="element" class="rate">
+      <input type="radio" id="workshop1" name="rate" value="1" />
+      <label for="1" title="text">1</label>
+      <input type="radio" id="workshop2" name="rate" value="2" />
+      <label for="2" title="text">2</label>
+      <input type="radio" id="workshop3" name="rate" value="3" />
+      <label for="3" title="text">3</label>
+      <input type="radio" id="workshop4" name="rate" value="4" />
+      <label for="4" title="text">4</label>
+      <input type="radio" id="workshop5" name="rate" value="5" />
+      <label for="5" title="text">5</label>
     </div>
     <label for="speaker"> How was the speaker at your AthenaHacks event? (optional)</label>
     </label>
@@ -115,15 +148,54 @@
       <textarea id="speaker" name="speaker" rows="5" cols="70">
       </textarea>
     </div>
+    <label for="speakerrate"> Please rate your speaker experience (optional)</label><br>
+    <div id="element" class="rate">
+      <input type="radio" id="speaker1" name="rate" value="1" />
+      <label for="1" title="text">1</label>
+      <input type="radio" id="speaker2" name="rate" value="2" />
+      <label for="2" title="text">2</label>
+      <input type="radio" id="speaker3" name="rate" value="3" />
+      <label for="3" title="text">3</label>
+      <input type="radio" id="speaker4" name="rate" value="4" />
+      <label for="4" title="text">4</label>
+      <input type="radio" id="speaker5" name="rate" value="5" />
+      <label for="5" title="text">5</label>
+    </div>
     <label for="networking"> How was your networking experience at AthenaHacks? (optional)</label>
     <div id="element">
       <textarea id="networking" name="networking" rows="5" cols="70">
       </textarea>
     </div>
+    <label for="networkingrate"> Please rate your networking experience (optional)</label><br>
+    <div id="element" class="rate">
+      <input type="radio" id="networking1" name="rate" value="1" />
+      <label for="1" title="text">1</label>
+      <input type="radio" id="networking2" name="rate" value="2" />
+      <label for="2" title="text">2</label>
+      <input type="radio" id="networking3" name="rate" value="3" />
+      <label for="3" title="text">3</label>
+      <input type="radio" id="networking4" name="rate" value="4" />
+      <label for="4" title="text">4</label>
+      <input type="radio" id="networking5" name="rate" value="5" />
+      <label for="5" title="text">5</label>
+    </div>
     <label for="overallexp"> How was your overall experience at AthenaHacks? (optional)</label>
     <div id="element">
       <textarea id="overallexp" name="overallexp" rows="5" cols="70">
       </textarea>
+    </div>
+    <label for="overallrate"> Please rate your experience at workshops (optional)</label><br>
+    <div id="element" class="rate">
+      <input type="radio" id="overall1" name="rate" value="1" />
+      <label for="1" title="text">1</label>
+      <input type="radio" id="overall2" name="rate" value="2" />
+      <label for="2" title="text">2</label>
+      <input type="radio" id="overall3" name="rate" value="3" />
+      <label for="3" title="text">3</label>
+      <input type="radio" id="overall4" name="rate" value="4" />
+      <label for="4" title="text">4</label>
+      <input type="radio" id="overall5" name="rate" value="5" />
+      <label for="5" title="text">5</label>
     </div>
     <script src="newuserformscript.js"></script>
   </body>
