@@ -127,16 +127,26 @@ def get_contact_info(person):
     
 
 #compute similarities
-def flatten(l):
-    return [item for sublist in l for item in sublist]
+def flatten(A):
+    rt = []
+    for i in A:
+        if isinstance(i,list): rt.extend(flatten(i))
+        else: rt.append(i)
+    return rt
 
 def intersection(lst1, lst2):
     lst3 = [value for value in lst1 if value in lst2]
     return lst3
 
+def Union(lst1, lst2):
+    final_list = list(set(lst1) | set(lst2))
+    return len(final_list)
+
 def jaccard(list1, list2):
     intersection = len(list(set(list1).intersection(list2)))
-    union = (len(list1) + len(list2)) - intersection
+    print(intersection)
+    union = Union(list1,list2)
+    print(union)
     return float(intersection) / union
 
 
