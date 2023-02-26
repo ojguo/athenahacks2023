@@ -1,0 +1,66 @@
+body {
+    background: White;
+    font-size: 25px;
+    margin: 0;
+    height: 100vh;
+    color: #79639e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tahoma", sans-serif;
+    background-image: linear-gradient(to left, transparent, #E4D6EE, white), 
+    repeating-linear-gradient(to top, white, transparent, white, #E4D6EE);
+  }
+  
+  .Login{text-align: center;}
+  
+  .Create.your.account{text-align: center;}
+  
+  .button_Login {
+    text-align: center;
+    border-radius: 5px;
+    margin: px 50px;
+    width: auto;
+    opacity: 0.8;
+    color: #79639e;
+    font-size: 18px;
+    background-color:inherit;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    border: 1.5px solid;
+  }
+  
+  .button_Login:hover {
+    background-color: #bca6cc;
+    color: white;
+  }
+  
+  .button_Create_your_account{
+    text-align: center;
+    border-radius: 5px;
+    margin: px 50px;
+    width: auto;
+    opacity: 0.8;
+    color: #79639e;
+    font-size: 18px;
+    background-color:inherit;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    border: 1.5px solid;
+  }
+  
+  .button_Create_your_account:hover {
+    background-color: #bca6cc;
+    color: white;
+  }
+  
+  h1{
+      text-align: center;
+  }
+  p{
+      text-align: center;
+  }
+  
+  .heading{text-align: center;}

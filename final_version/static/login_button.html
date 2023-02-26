@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="login.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login_button.css">
+    </head>
+
+<body>
+    <form action="">
+
+            <h3>Sign in</h3>
+        
+
+        <div class="container">
+       
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Enter Username" name="username" id='username' required>
+            <br>
+            <label for="pwd">Password:</label>
+            <input type="password" placeholder="Enter Password" name="pwd" id='password'required>
+
+           
+            <div class="subcontainer">
+                <label><input type="checkbox" checked="checked" name="remember_me"> Remember me</label>
+                <p class="forgotpwd"> 
+                <u>Forgot Password?</u></p>
+            </div>
+            <button class="Submit" type="submit" onclick="old_user_login()">Submit</button>
+        </div>
+         
+      </form>
+  </body>
+</html>
