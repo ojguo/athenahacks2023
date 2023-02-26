@@ -147,6 +147,40 @@ def jaccard(list1, list2):
     union = Union(list1,list2)
     return float(intersection) / union
 
+#return a list of top_n similar users based on Jaccard similarity
+def get_similar_people(user_key,top_n):
+  response = requests.get('https://athenahacks-1ad60-default-rtdb.firebaseio.com/users/'+str(user_key)+'/information/.json')
+  user_dict=response.json()
+  user_list=[]
+  for k,v in user_dict.items():
+    if k in ['industry','major','interests']:
+      user_list.append(v)
+  user_list=flatten(user_list)
+
+  similarities=[]
+  response2=requests.get('https://athenahacks-1ad60-default-rtdb.firebaseio.com/users/.json').json()
+
+  for k,v in response2.items():
+    list_loop=[]
+    for k2,v2 in v['information'].items():
+      if k2 in ['industry','major','interests']:
+        list_loop.append(v2)
+
+    jac_sim=jaccard(user_list,list_loop)
+    similarities.append((jac_sim,k))
+  similarities=sorted(similarities)
+
+  return_val=[]
+  try:
+    for i in range(top_n):
+      return_val.append(similarities[i][1])
+    return return_val
+  except:
+    for i in range(len(similarities)):
+      if similarities[i][1] not in return_val:
+        return_val.append(similarities[i][1])
+    return return_val
+
 
 if __name__ == "__main__":
     app.run(debug=True)
