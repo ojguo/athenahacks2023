@@ -3,26 +3,31 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="newuserformstylesheet.css">
+    <link rel="stylesheet" href="src/style.css">
   </head>
-  <img src="banner.png" width="1000" height="250">
+  <img src="banner.png" width="1920" height="480">
   <h3>
     <div id="intro">
       <label for="head"> Help us learn a bit more about you so we can connect you to our greater AthenaHacks network:<br></label>
       <label for="head"> Based on your experiences and interests, we will help match you with a fellow hacker for mentorship and friendship!<br></label>
     </div>
   </h3>
+  <div id="prelim">
+      <table>
+        <tr>
+          <label for="full name"> <b>Full Name: </label >
+          <input type="text" id="fullname" name="fullname" required="required"> </tr><br><br>
+        <tr><label for="gradyear"> Graduation Year:</label>
+        <input type="text" id="gradyear" name="gradyear" required="required"> </tr><br><br>
+        <tr><label for="email"> Email: </label >
+        <input type="text" id="email" name="email" required="required"> </tr><br><br>
+        <tr><label for="phone"> Phone Number: </label >
+        <input type="text" id="phone" name="phone" required="required"> </tr><br><br>
+        <tr><label for="linkedin"> LinkedIn: </label >
+        <input type="text" id="linkedin" name="linkedin" required="required"> </tr><br><br><br>
+      </table>
+  </div>
   <body>
-    <div id="element">
-      <form>
-        <label for="full name"> <b>Full Name: </label >
-        <input type="text" id="fullname" name="fullname" required="required"> &emsp; &emsp;
-        <label for="email"> Email: </label >
-        <input type="text" id="email" name="email" required="required"> &emsp; &emsp;
-        <label for="gradyear"> Graduation Year:</label>
-        <input type="text" id="gradyear" name="gradyear" required="required"> <br><br><br>
-      </form>
-    </div>
       <label for="gender"><b>Gender:</label>
     <div id="element">
       <select id="gender" name="gender" class="custom-select" multiple required="required">
@@ -104,6 +109,11 @@
         <option value="Cooking/Baking">Cooking/Baking</option>
         <option value="Other">Other</option>
       </select>
+    </div>
+    <label for="bio"> Write a short bio about yourself so other previous hackers can learn more about you!</label>
+    <div id="element">
+      <textarea id = "bio" name="bio" rows="5" cols="70" required="required">
+      </textarea>
     </div>
     <label for="beginner"> Did you feel like your AthenaHacks experience was beginner friendly? (optional)</label>
     <div id="element">
@@ -197,6 +207,6 @@
       <input type="radio" id="overall5" name="rate" value="5" />
       <label for="5" title="text">5</label>
     </div>
-    <script src="newuserformscript.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
