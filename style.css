@@ -3,7 +3,7 @@ body {
   font-size: 25px;
   margin: 0;
   height: 100vh;
-  color: #4863A0;
+  color: #79639e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@ body {
   margin: px 50px;
   width: auto;
   opacity: 0.8;
-  color: #4863A0;
+  color: #79639e;
   font-size: 18px;
   background-color:inherit;
   display: inline-block;
@@ -30,7 +30,7 @@ body {
 }
 
 .button_Login:hover {
-  background-color: #4863A0;
+  background-color: #bca6cc;
   color: white;
 }
 
@@ -40,7 +40,7 @@ body {
   margin: px 50px;
   width: auto;
   opacity: 0.8;
-  color: #4863A0;
+  color: #79639e;
   font-size: 18px;
   background-color:inherit;
   display: inline-block;
@@ -50,7 +50,7 @@ body {
 }
 
 .button_Create_your_account:hover {
-  background-color: #4863A0;
+  background-color: #bca6cc;
   color: white;
 }
 
