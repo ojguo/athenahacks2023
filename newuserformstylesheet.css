@@ -36,3 +36,14 @@ body {
 #element {
   padding: 15px;
 }
+
+#similar_person {
+  font-family: "Tahoma", sans-serif;
+  font-size: 20px;
+  color: #bca6cc;
+  padding: 20px;
+}
+
+.similar_style {
+  padding: 20px;
+}
